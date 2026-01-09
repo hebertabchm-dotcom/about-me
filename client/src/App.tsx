@@ -8,8 +8,22 @@ import Home from "./pages/Home";
 
 function getRouterBase() {
   const baseUrl = import.meta.env.BASE_URL;
-  if (!baseUrl || baseUrl === "/" || !baseUrl.startsWith("/")) return "";
-  return baseUrl.endsWith("/") ? baseUrl.slice(0, -1) : baseUrl;
+  if (baseUrl && baseUrl !== "/" && baseUrl.startsWith("/")) {
+    return baseUrl.endsWith("/") ? baseUrl.slice(0, -1) : baseUrl;
+  }
+
+  try {
+    const bundlePathname = new URL(import.meta.url).pathname;
+    const assetsIndex = bundlePathname.lastIndexOf("/assets/");
+    if (assetsIndex >= 0) {
+      const inferredBase = bundlePathname.slice(0, assetsIndex);
+      return inferredBase === "/" ? "" : inferredBase;
+    }
+  } catch {
+    // ignore
+  }
+
+  return "";
 }
 
 function Routes() {

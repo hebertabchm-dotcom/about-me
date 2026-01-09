@@ -56,10 +56,11 @@ export default function HeroSection() {
           <div className="fade-in fade-in-delay-3 relative">
             <div className="relative aspect-square overflow-hidden rounded-2xl border border-border/50 shadow-2xl">
               <img
-                src="/images/hebert-profile.png"
-                alt="Hebert Matheus"
-                className="w-full h-full object-cover object-top"
-              />
+  src={`${import.meta.env.BASE_URL}images/hebert-profile.png`}
+  alt="Hebert Matheus"
+  className="w-full h-full object-cover object-top"
+/>
+
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-40" />
             </div>
           </div>
