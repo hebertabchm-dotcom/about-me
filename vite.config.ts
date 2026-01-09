@@ -1,9 +1,9 @@
 import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
-import fs from "node:fs/promises";
+import { copyFile } from "node:fs/promises";
 import path from "path";
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
 const enableManusRuntime =
@@ -21,12 +21,12 @@ const plugins = [
 function spa404FallbackPlugin() {
   return {
     name: "spa-404-fallback",
-    apply: "build",
+    apply: "build" as const,
     closeBundle: async () => {
       const outDir = path.resolve(import.meta.dirname, "dist/public");
-      await fs.copyFile(path.join(outDir, "index.html"), path.join(outDir, "404.html"));
+      await copyFile(path.join(outDir, "index.html"), path.join(outDir, "404.html"));
     },
-  };
+  } satisfies Plugin;
 }
 
 export default defineConfig(({ command }) => ({
