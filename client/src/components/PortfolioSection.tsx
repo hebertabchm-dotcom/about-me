@@ -2,43 +2,48 @@ import { ExternalLink, ArrowUpRight } from 'lucide-react';
 
 export default function PortfolioSection() {
   const projects = [
-    {
-      id: 1,
-      title: 'Projeto LuxPrime',
-      category: 'Imobiliária',
-      description: 'Plataforma de curadoria imobiliária de alto padrão com atendimento consultivo, visitas guiadas e formulário de contato.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      image: `${import.meta.env.BASE_URL}images/projeto-01.webp`,
-      link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt01/',
-    },
-    {
-      id: 2,
-      title: 'Projeto Aurum Vista',
-      category: 'Imobiliária',
-      description: 'Plataforma imobiliária especializada em curadoria de residências e investimentos com design elegante e responsivo.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-     image: `${import.meta.env.BASE_URL}images/projeto-02.webp`,
-      link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt02/',
-    },
-    {
-      id: 3,
-      title: 'Projeto Aurea State',
-      category: 'Imobiliária',
-      description: 'Imobiliária de alto padrão com foco em seleção por arquitetura, localização e potencial de valorização.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-     image: `${import.meta.env.BASE_URL}images/projeto-03.webp`,
-      link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt03/',
-    },
-    {
-      id: 4,
-      title: 'Projeto Siwood Interiors',
-      category: 'Interiores',
-      description: 'Boutique de interiores premium com projeto de interiores, reforma completa e curadoria de mobiliário.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-   image: `${import.meta.env.BASE_URL}images/projeto-04.webp`,
-      link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt04/',
-    },
-  ];
+  {
+    id: 1,
+    title: 'Projeto LuxPrime',
+    category: 'Imobiliária',
+    description:
+      'Plataforma de curadoria imobiliária de alto padrão com atendimento consultivo, visitas guiadas e formulário de contato.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    image: `${import.meta.env.BASE_URL}images/projeto-01.png`,
+    link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt01/',
+  },
+  {
+    id: 2,
+    title: 'Projeto Aurum Vista',
+    category: 'Imobiliária',
+    description:
+      'Plataforma imobiliária especializada em curadoria de residências e investimentos com design elegante e responsivo.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    image: `${import.meta.env.BASE_URL}images/projeto-02.png`,
+    link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt02/',
+  },
+  {
+    id: 3,
+    title: 'Projeto Aurea State',
+    category: 'Imobiliária',
+    description:
+      'Imobiliária de alto padrão com foco em seleção por arquitetura, localização e potencial de valorização.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    image: `${import.meta.env.BASE_URL}images/projeto-03.png`,
+    link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt03/',
+  },
+  {
+    id: 4,
+    title: 'Projeto Siwood Interiors',
+    category: 'Interiores',
+    description:
+      'Boutique de interiores premium com projeto de interiores, reforma completa e curadoria de mobiliário.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    image: `${import.meta.env.BASE_URL}images/projeto-04.png`,
+    link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt04/',
+  },
+];
+
 
   return (
     <section id="portfolio" className="py-24 md:py-32 border-t border-border relative overflow-hidden">
