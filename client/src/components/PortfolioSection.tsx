@@ -75,8 +75,15 @@ export default function PortfolioSection() {
                 <div className="relative h-56 md:h-64 overflow-hidden bg-muted flex-shrink-0">
                   <img
                     src={project.image}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 w-full h-full object-cover blur-md scale-105 opacity-35 transition-transform duration-500 ease-out group-hover:scale-110"
+                  />
+                  <img
+                    src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out"
+                    loading="lazy"
+                    className="relative z-10 w-full h-full object-contain p-4 transition-transform duration-500 ease-out group-hover:scale-105"
                   />
 
                   {/* Gradient Overlay */}
