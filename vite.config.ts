@@ -17,6 +17,7 @@ const plugins = [
   ...(enableManusRuntime ? [vitePluginManusRuntime()] : []),
 ];
 
+
 export default defineConfig({
   base: process.env.VITE_BASE ?? "/",
   plugins,
@@ -52,3 +53,7 @@ export default defineConfig({
     },
   },
 });
+
+export default defineConfig({
+  base: "/about-me/",
+})
