@@ -19,7 +19,7 @@ const plugins = [
 
 
 export default defineConfig({
-  base: process.env.VITE_BASE ?? "/",
+  base: process.env.VITE_BASE ?? "/about-me/",
   plugins,
   resolve: {
     alias: {
@@ -54,6 +54,3 @@ export default defineConfig({
   },
 });
 
-export default defineConfig({
-  base: "/about-me/",
-})
