@@ -8,7 +8,7 @@ export default function PortfolioSection() {
       category: 'Imobiliária',
       description: 'Plataforma de curadoria imobiliária de alto padrão com atendimento consultivo, visitas guiadas e formulário de contato.',
       tags: ['HTML5', 'CSS3', 'JavaScript'],
-      image: `${import.meta.env.BASE_URL}images/luxprime-screenshot.webp`,
+      image: `${import.meta.env.BASE_URL}images/projeto-01.webp`,
       link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt01/',
     },
     {
@@ -17,7 +17,7 @@ export default function PortfolioSection() {
       category: 'Imobiliária',
       description: 'Plataforma imobiliária especializada em curadoria de residências e investimentos com design elegante e responsivo.',
       tags: ['HTML5', 'CSS3', 'JavaScript'],
-     image: `${import.meta.env.BASE_URL}images/aurumvista-screenshot.webp`,
+     image: `${import.meta.env.BASE_URL}images/projeto-02.webp`,
       link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt02/',
     },
     {
@@ -26,7 +26,7 @@ export default function PortfolioSection() {
       category: 'Imobiliária',
       description: 'Imobiliária de alto padrão com foco em seleção por arquitetura, localização e potencial de valorização.',
       tags: ['HTML5', 'CSS3', 'JavaScript'],
-     image: `${import.meta.env.BASE_URL}images/aurea-state-screenshot.webp`,
+     image: `${import.meta.env.BASE_URL}images/projeto-03.webp`,
       link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt03/',
     },
     {
@@ -35,7 +35,7 @@ export default function PortfolioSection() {
       category: 'Interiores',
       description: 'Boutique de interiores premium com projeto de interiores, reforma completa e curadoria de mobiliário.',
       tags: ['HTML5', 'CSS3', 'JavaScript'],
-   image: `${import.meta.env.BASE_URL}images/siwood-screenshot.webp`,
+   image: `${import.meta.env.BASE_URL}images/projeto-04.webp`,
       link: 'https://hebertabchm-dotcom.github.io/projeto-imobiliario-gpt04/',
     },
   ];
